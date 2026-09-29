@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>星弦隐私政策</title>
+<style>
+  body{max-width:760px;margin:0 auto;padding:24px 16px 64px;font:16px/1.75 -apple-system,"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;color:#222;background:#fff}
+  h1{font-size:26px;margin:8px 0 4px}
+  h2{font-size:19px;margin:32px 0 8px;padding-top:8px;border-top:1px solid #eee}
+  h3{font-size:16px;margin:20px 0 4px}
+  table{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}
+  th,td{border:1px solid #ddd;padding:8px;text-align:left;vertical-align:top}
+  th{background:#f6f6f6}
+  .meta{color:#666;font-size:14px}
+  @media (prefers-color-scheme:dark){body{background:#111;color:#ddd}th{background:#1c1c1c}th,td,h2{border-color:#333}.meta{color:#999}}
+</style>
+</head>
+<body>
+<h1>星弦隐私政策</h1>
+<p class="meta">更新日期：2026 年 9 月 28 日　生效日期：2026 年 9 月 28 日</p>
+
+<p>“星弦”（以下简称“本应用”，包名 com.yu.xingxian）由北京理性幻想科技有限公司（以下简称“我们”）开发和运营。我们非常重视你的个人信息保护。本政策说明本应用收集哪些信息、为什么收集、怎么使用和保护，以及你享有的权利。请在使用前仔细阅读。</p>
+
+<h2>一、我们收集和使用的信息</h2>
+<p>本应用的大部分功能无需注册即可使用。我们只在实现具体功能所必需的范围内调用设备权限，调用前会通过系统弹窗征得你的同意，你可以随时在系统设置中关闭。</p>
+
+<table>
+<tr><th>权限 / 信息</th><th>使用目的与场景</th><th>处理方式</th></tr>
+<tr><td>相机<br>ohos.permission.CAMERA</td>
+<td>在 AR 钢琴、AR 鼓、空中绘画、特雷门琴等 AR 乐器页面，识别手部位置和手势，将手势转换为演奏操作；印纸钢琴页面识别纸面琴键。</td>
+<td>画面仅在设备本地实时处理，<b>不录制、不存储、不上传</b>，不做人脸识别。离开相关页面后立即关闭相机。</td></tr>
+<tr><td>加速度传感器<br>ohos.permission.ACCELEROMETER</td>
+<td>在“摇一摇乐器”（沙锤 / 铃鼓 / 响板）、“倾斜迷宫”、“回声迷宫”、“体感演奏”、“音符宠物”（甩动抛接）页面，以及手表端的节拍器、特雷门琴、摇动打鼓功能中，识别设备的摇晃和倾斜动作，转换为音效或游戏操作。</td>
+<td>数据仅在设备本地实时计算，<b>不存储、不上传、不与任何第三方共享</b>。只在你打开上述页面时调用，离开页面或应用退到后台后立即停止。</td></tr>
+<tr><td>陀螺仪<br>ohos.permission.GYROSCOPE</td>
+<td>在“体感演奏”和“印纸钢琴”页面，检测设备旋转角度，用于体感操作和相机画面抖动校准。</td>
+<td>同上，仅本地实时处理，不存储、不上传。</td></tr>
+<tr><td>网络<br>ohos.permission.INTERNET</td>
+<td>华为账号登录后的账号同步、匿名使用统计、同一局域网内多台设备合奏。</td>
+<td>详见下文。</td></tr>
+</table>
+
+<h3>1. 华为账号登录（可选）</h3>
+<p>你可以在设置中选择使用华为账号登录，用于同步昵称等账号资料。登录时我们通过华为账号服务获取你授权的 UnionID、OpenID 和昵称，并发送到我们的服务器（wishing.xin）建立或找回账号。本地仅保存账号 ID 和昵称，不保存任何登录凭证。不登录不影响使用本应用的任何演奏功能。</p>
+
+<h3>2. 匿名使用统计</h3>
+<p>为了了解功能使用情况、改进产品，本应用会记录匿名事件，例如打开了哪个乐器页面、使用时长、分享次数。统计使用应用自行随机生成的匿名标识，<b>不读取 IMEI、OAID、MAC 地址、手机号等设备或身份标识</b>，不包含相机画面、传感器数据、演奏内容或任何个人身份信息。统计数据发送至我们的服务器（wishing.xin）。</p>
+
+<h3>3. 局域网合奏</h3>
+<p>使用多人合奏功能时，本应用通过局域网广播与同一 Wi-Fi 下的其他设备交换演奏音符和房间信息。这些数据只在局域网内传输，不经过我们的服务器。</p>
+
+<h3>4. 分享</h3>
+<p>当你主动分享演奏卡片图片或录音时，本应用在本地生成文件并调用系统分享面板，由你选择分享目标。我们不会上传你分享的内容。</p>
+
+<h3>5. 小艺智能体</h3>
+<p>本应用提供“星弦”小艺智能体入口，对话服务由华为小艺提供，适用华为的相关隐私政策。</p>
+
+<h2>二、第三方服务与 SDK</h2>
+<table>
+<tr><th>名称</th><th>提供方</th><th>用途</th><th>涉及的信息</th></tr>
+<tr><td>华为账号服务（Account Kit）</td><td>华为软件技术有限公司</td><td>华为账号登录</td><td>UnionID、OpenID、昵称（仅在你主动登录时）</td></tr>
+<tr><td>Agent Framework Kit（小艺智能体）</td><td>华为软件技术有限公司</td><td>应用内小艺对话</td><td>你在对话中输入的内容，由华为处理</td></tr>
+<tr><td>MediaPipe（开源库）</td><td>Google（开源，已内置于本应用）</td><td>手部识别</td><td>相机画面，仅在本地运行，不联网、不向 Google 发送任何数据</td></tr>
+</table>
+<p>华为服务的隐私政策请见：<a href="https://consumer.huawei.com/cn/privacy/privacy-policy/">https://consumer.huawei.com/cn/privacy/privacy-policy/</a></p>
+
+<h2>三、信息的存储与保护</h2>
+<ul>
+<li>我们在中华人民共和国境内收集和产生的个人信息，存储在境内服务器。</li>
+<li>账号信息在你注销账号前保留；匿名统计数据最长保留 2 年，之后删除或进一步匿名化处理。</li>
+<li>数据传输使用 HTTPS 加密，服务器访问受权限控制。</li>
+<li>我们不会出售你的个人信息，也不会将其用于广告投放。除法律法规要求外，不向第三方提供。</li>
+</ul>
+
+<h2>四、你的权利</h2>
+<ul>
+<li><b>管理权限</b>：可在“设置 → 应用和元服务 → 星弦 → 权限”中随时关闭相机等权限，关闭后对应功能不可用，其他功能不受影响。</li>
+<li><b>退出登录</b>：在应用设置的“账号”中退出登录，本地账号信息立即清除。</li>
+<li><b>查询、更正、删除与注销账号</b>：发送邮件至下方联系邮箱，我们会在 15 个工作日内处理。</li>
+<li><b>撤回同意</b>：可通过关闭权限、退出登录或卸载本应用撤回授权，撤回不影响此前基于授权已进行的处理。</li>
+</ul>
+
+<h2>五、未成年人保护</h2>
+<p>本应用不面向 14 周岁以下儿童提供账号注册服务。若你是未满 14 周岁的未成年人，请在监护人陪同和同意下使用。如发现在未获监护人同意的情况下收集了儿童个人信息，我们会尽快删除。</p>
+
+<h2>六、政策更新</h2>
+<p>本政策可能随功能调整而更新。重大变更时，我们会在应用内或本页面显著位置提示。更新后的政策在本页面发布之日起生效。</p>
+
+<h2>七、联系我们</h2>
+<p>运营者：北京理性幻想科技有限公司<br>
+联系邮箱：<a href="mailto:shodan1q@gmail.com">shodan1q@gmail.com</a></p>
+<p>如对本政策或个人信息处理有任何疑问、意见或投诉，请通过上述邮箱联系我们，我们将在 15 个工作日内回复。</p>
+</body>
+</html>
